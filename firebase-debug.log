@@ -1,0 +1,138 @@
+[debug] [2022-08-31T09:25:33.888Z] ----------------------------------------------------------------------
+[debug] [2022-08-31T09:25:33.893Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\alabs\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-08-31T09:25:33.894Z] CLI Version:   11.8.0
+[debug] [2022-08-31T09:25:33.895Z] Platform:      win32
+[debug] [2022-08-31T09:25:33.895Z] Node Version:  v16.14.2
+[debug] [2022-08-31T09:25:33.898Z] Time:          Wed Aug 31 2022 10:25:33 GMT+0100 (British Summer Time)
+[debug] [2022-08-31T09:25:33.899Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-08-31T09:25:34.058Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-08-31T09:25:34.059Z] > authorizing via signed-in user (abbasalabson@gmail.com)
+[debug] [2022-08-31T09:25:34.060Z] [iam] checking project clone-yt-cef81 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-08-31T09:25:34.066Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-yt-cef81:testIamPermissions [none]
+[debug] [2022-08-31T09:25:34.067Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-yt-cef81:testIamPermissions x-goog-quota-user=projects/clone-yt-cef81
+[debug] [2022-08-31T09:25:34.068Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-yt-cef81:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-08-31T09:25:36.552Z] [iam] error while checking permissions, command may fail: FirebaseError: Failed to make request to https://cloudresourcemanager.googleapis.com/v1/projects/clone-yt-cef81:testIamPermissions
+[debug] [2022-08-31T09:25:36.554Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-yt-cef81 [none]
+[debug] [2022-08-31T09:25:38.155Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-yt-cef81 200
+[debug] [2022-08-31T09:25:38.155Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-yt-cef81 {"projectId":"clone-yt-cef81","projectNumber":"830620923148","displayName":"gmail-clone-yt","name":"projects/clone-yt-cef81","resources":{"hostingSite":"clone-yt-cef81","storageBucket":"clone-yt-cef81.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_5b71c640-db10-4062-85b3-3b8d2b94af23"}
+[info] 
+[info] === Deploying to 'clone-yt-cef81'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-08-31T09:25:38.164Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-yt-cef81 [none]
+[debug] [2022-08-31T09:25:40.588Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-yt-cef81 200
+[debug] [2022-08-31T09:25:40.589Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-yt-cef81 {"projectId":"clone-yt-cef81","projectNumber":"830620923148","displayName":"gmail-clone-yt","name":"projects/clone-yt-cef81","resources":{"hostingSite":"clone-yt-cef81","storageBucket":"clone-yt-cef81.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_5b71c640-db10-4062-85b3-3b8d2b94af23"}
+[debug] [2022-08-31T09:25:40.601Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/830620923148/sites/clone-yt-cef81/versions [none]
+[debug] [2022-08-31T09:25:40.601Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/830620923148/sites/clone-yt-cef81/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-08-31T09:25:44.559Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/830620923148/sites/clone-yt-cef81/versions 200
+[debug] [2022-08-31T09:25:44.560Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/830620923148/sites/clone-yt-cef81/versions {"name":"projects/830620923148/sites/clone-yt-cef81/versions/5118a2083ce0c3ef","status":"CREATED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[clone-yt-cef81]: beginning deploy... 
+[info] i  hosting[clone-yt-cef81]: found 12 files in build 
+[debug] [2022-08-31T09:25:44.599Z] [hosting] uploading with 200 concurrency
+[debug] [2022-08-31T09:25:44.604Z] [hosting] hash cache [YnVpbGQ] not populated
+[debug] [2022-08-31T09:25:48.244Z] [hosting] hash cache [YnVpbGQ] stored for 12 files
+[debug] [2022-08-31T09:25:48.245Z] [hosting][hash queue][FINAL] {"max":3610,"min":70,"avg":471.3333333333333,"active":0,"complete":12,"success":12,"errored":0,"retried":0,"total":12,"elapsed":3637}
+[debug] [2022-08-31T09:25:48.247Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/830620923148/sites/clone-yt-cef81/versions/5118a2083ce0c3ef:populateFiles [none]
+[debug] [2022-08-31T09:25:48.247Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/830620923148/sites/clone-yt-cef81/versions/5118a2083ce0c3ef:populateFiles {"files":{"/asset-manifest.json":"d730afe7ef5ccea0d9bd92a898ef6a2304fa03dedb546e1076e31ba433654ab3","/favicon.ico":"87aecafb41d21ea93b7af81398237b980c43ee880676c78630ee2d1e9a6d711f","/index.html":"343af2f5aefcd2890613ca41d478ead6d480ecee9f98c5fb46a5a140c3613a87","/logo192.png":"ebf380e341383bbf65d6a762603f630a9f7610c97f32bd297bc097635bc37ee3","/logo512.png":"c55d034d9cf7abfac7600919cbf4f4ce2f3ea3478df91d01177e8ff136f58918","/manifest.json":"aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a","/robots.txt":"5fcd5c559ded0c02b3ed7840ca3ee77e95b798730af98d9f18bc627ac898071e","/static/css/main.23c4002d.css":"29250584b79c32cda01d76dc4dac35ba52bb318705def3b304951c5c4dda2b5d","/static/css/main.23c4002d.css.map":"9bcb09ec30e84d01bd3c79b9955a7f947c205166b383daf53f0b10efe553a47d","/static/js/main.9235b6e4.js.LICENSE.txt":"1827e95f343d4d8d1db8a06e53eb3db27b063ae88037a098077c4b4d84c26f3d","/static/js/main.9235b6e4.js":"73410db9765c0190822e628d7f9cb7d454810c258c03df2293612e454c187e10","/static/js/main.9235b6e4.js.map":"221400243d82b72ca9ea5514b6d62c94356867096b46e0e15f8523b70498f8d8"}}
+[debug] [2022-08-31T09:25:54.957Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/830620923148/sites/clone-yt-cef81/versions/5118a2083ce0c3ef:populateFiles 200
+[debug] [2022-08-31T09:25:54.958Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/830620923148/sites/clone-yt-cef81/versions/5118a2083ce0c3ef:populateFiles {"uploadRequiredHashes":["87aecafb41d21ea93b7af81398237b980c43ee880676c78630ee2d1e9a6d711f","1827e95f343d4d8d1db8a06e53eb3db27b063ae88037a098077c4b4d84c26f3d","ebf380e341383bbf65d6a762603f630a9f7610c97f32bd297bc097635bc37ee3","29250584b79c32cda01d76dc4dac35ba52bb318705def3b304951c5c4dda2b5d","221400243d82b72ca9ea5514b6d62c94356867096b46e0e15f8523b70498f8d8","5fcd5c559ded0c02b3ed7840ca3ee77e95b798730af98d9f18bc627ac898071e","9bcb09ec30e84d01bd3c79b9955a7f947c205166b383daf53f0b10efe553a47d","73410db9765c0190822e628d7f9cb7d454810c258c03df2293612e454c187e10","c55d034d9cf7abfac7600919cbf4f4ce2f3ea3478df91d01177e8ff136f58918","aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a","d730afe7ef5ccea0d9bd92a898ef6a2304fa03dedb546e1076e31ba433654ab3","343af2f5aefcd2890613ca41d478ead6d480ecee9f98c5fb46a5a140c3613a87"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files"}
+[debug] [2022-08-31T09:25:54.969Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files/87aecafb41d21ea93b7af81398237b980c43ee880676c78630ee2d1e9a6d711f [none]
+[debug] [2022-08-31T09:25:54.988Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files/87aecafb41d21ea93b7af81398237b980c43ee880676c78630ee2d1e9a6d711f [stream]
+[debug] [2022-08-31T09:25:54.994Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files/1827e95f343d4d8d1db8a06e53eb3db27b063ae88037a098077c4b4d84c26f3d [none]
+[debug] [2022-08-31T09:25:54.995Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files/1827e95f343d4d8d1db8a06e53eb3db27b063ae88037a098077c4b4d84c26f3d [stream]
+[debug] [2022-08-31T09:25:54.998Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files/ebf380e341383bbf65d6a762603f630a9f7610c97f32bd297bc097635bc37ee3 [none]
+[debug] [2022-08-31T09:25:54.998Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files/ebf380e341383bbf65d6a762603f630a9f7610c97f32bd297bc097635bc37ee3 [stream]
+[debug] [2022-08-31T09:25:55.000Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files/29250584b79c32cda01d76dc4dac35ba52bb318705def3b304951c5c4dda2b5d [none]
+[debug] [2022-08-31T09:25:55.000Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files/29250584b79c32cda01d76dc4dac35ba52bb318705def3b304951c5c4dda2b5d [stream]
+[debug] [2022-08-31T09:25:55.004Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files/221400243d82b72ca9ea5514b6d62c94356867096b46e0e15f8523b70498f8d8 [none]
+[debug] [2022-08-31T09:25:55.005Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files/221400243d82b72ca9ea5514b6d62c94356867096b46e0e15f8523b70498f8d8 [stream]
+[debug] [2022-08-31T09:25:55.010Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files/5fcd5c559ded0c02b3ed7840ca3ee77e95b798730af98d9f18bc627ac898071e [none]
+[debug] [2022-08-31T09:25:55.010Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files/5fcd5c559ded0c02b3ed7840ca3ee77e95b798730af98d9f18bc627ac898071e [stream]
+[debug] [2022-08-31T09:25:55.018Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files/9bcb09ec30e84d01bd3c79b9955a7f947c205166b383daf53f0b10efe553a47d [none]
+[debug] [2022-08-31T09:25:55.019Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files/9bcb09ec30e84d01bd3c79b9955a7f947c205166b383daf53f0b10efe553a47d [stream]
+[debug] [2022-08-31T09:25:55.022Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files/73410db9765c0190822e628d7f9cb7d454810c258c03df2293612e454c187e10 [none]
+[debug] [2022-08-31T09:25:55.022Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files/73410db9765c0190822e628d7f9cb7d454810c258c03df2293612e454c187e10 [stream]
+[debug] [2022-08-31T09:25:55.027Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files/c55d034d9cf7abfac7600919cbf4f4ce2f3ea3478df91d01177e8ff136f58918 [none]
+[debug] [2022-08-31T09:25:55.028Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files/c55d034d9cf7abfac7600919cbf4f4ce2f3ea3478df91d01177e8ff136f58918 [stream]
+[debug] [2022-08-31T09:25:55.030Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files/aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a [none]
+[debug] [2022-08-31T09:25:55.030Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files/aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a [stream]
+[debug] [2022-08-31T09:25:55.034Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files/d730afe7ef5ccea0d9bd92a898ef6a2304fa03dedb546e1076e31ba433654ab3 [none]
+[debug] [2022-08-31T09:25:55.034Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files/d730afe7ef5ccea0d9bd92a898ef6a2304fa03dedb546e1076e31ba433654ab3 [stream]
+[debug] [2022-08-31T09:25:55.041Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files/343af2f5aefcd2890613ca41d478ead6d480ecee9f98c5fb46a5a140c3613a87 [none]
+[debug] [2022-08-31T09:25:55.041Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files/343af2f5aefcd2890613ca41d478ead6d480ecee9f98c5fb46a5a140c3613a87 [stream]
+[debug] [2022-08-31T09:25:55.054Z] [hosting][populate queue][FINAL] {"max":6737,"min":6737,"avg":6737,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":6823}
+[debug] [2022-08-31T09:25:55.055Z] [hosting] uploads queued: 12
+[debug] [2022-08-31T09:25:57.109Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files/87aecafb41d21ea93b7af81398237b980c43ee880676c78630ee2d1e9a6d711f 200
+[debug] [2022-08-31T09:25:57.110Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files/87aecafb41d21ea93b7af81398237b980c43ee880676c78630ee2d1e9a6d711f [stream]
+[debug] [2022-08-31T09:25:57.283Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files/5fcd5c559ded0c02b3ed7840ca3ee77e95b798730af98d9f18bc627ac898071e 200
+[debug] [2022-08-31T09:25:57.284Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files/5fcd5c559ded0c02b3ed7840ca3ee77e95b798730af98d9f18bc627ac898071e [stream]
+[debug] [2022-08-31T09:25:57.891Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files/343af2f5aefcd2890613ca41d478ead6d480ecee9f98c5fb46a5a140c3613a87 200
+[debug] [2022-08-31T09:25:57.891Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files/343af2f5aefcd2890613ca41d478ead6d480ecee9f98c5fb46a5a140c3613a87 [stream]
+[debug] [2022-08-31T09:25:58.411Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files/9bcb09ec30e84d01bd3c79b9955a7f947c205166b383daf53f0b10efe553a47d 200
+[debug] [2022-08-31T09:25:58.411Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files/9bcb09ec30e84d01bd3c79b9955a7f947c205166b383daf53f0b10efe553a47d [stream]
+[debug] [2022-08-31T09:25:58.450Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files/29250584b79c32cda01d76dc4dac35ba52bb318705def3b304951c5c4dda2b5d 200
+[debug] [2022-08-31T09:25:58.450Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files/29250584b79c32cda01d76dc4dac35ba52bb318705def3b304951c5c4dda2b5d [stream]
+[debug] [2022-08-31T09:25:58.493Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files/aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a 200
+[debug] [2022-08-31T09:25:58.493Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files/aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a [stream]
+[debug] [2022-08-31T09:25:58.521Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files/73410db9765c0190822e628d7f9cb7d454810c258c03df2293612e454c187e10 200
+[debug] [2022-08-31T09:25:58.521Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files/73410db9765c0190822e628d7f9cb7d454810c258c03df2293612e454c187e10 [stream]
+[debug] [2022-08-31T09:25:58.990Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files/d730afe7ef5ccea0d9bd92a898ef6a2304fa03dedb546e1076e31ba433654ab3 200
+[debug] [2022-08-31T09:25:58.990Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files/d730afe7ef5ccea0d9bd92a898ef6a2304fa03dedb546e1076e31ba433654ab3 [stream]
+[debug] [2022-08-31T09:25:59.262Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files/1827e95f343d4d8d1db8a06e53eb3db27b063ae88037a098077c4b4d84c26f3d 200
+[debug] [2022-08-31T09:25:59.263Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files/1827e95f343d4d8d1db8a06e53eb3db27b063ae88037a098077c4b4d84c26f3d [stream]
+[debug] [2022-08-31T09:25:59.297Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files/c55d034d9cf7abfac7600919cbf4f4ce2f3ea3478df91d01177e8ff136f58918 200
+[debug] [2022-08-31T09:25:59.297Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files/c55d034d9cf7abfac7600919cbf4f4ce2f3ea3478df91d01177e8ff136f58918 [stream]
+[debug] [2022-08-31T09:26:05.454Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files/ebf380e341383bbf65d6a762603f630a9f7610c97f32bd297bc097635bc37ee3 200
+[debug] [2022-08-31T09:26:05.454Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files/ebf380e341383bbf65d6a762603f630a9f7610c97f32bd297bc097635bc37ee3 [stream]
+[debug] [2022-08-31T09:26:30.120Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files/221400243d82b72ca9ea5514b6d62c94356867096b46e0e15f8523b70498f8d8 200
+[debug] [2022-08-31T09:26:30.121Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clone-yt-cef81/versions/5118a2083ce0c3ef/files/221400243d82b72ca9ea5514b6d62c94356867096b46e0e15f8523b70498f8d8 [stream]
+[debug] [2022-08-31T09:26:30.121Z] [hosting][upload queue][FINAL] {"max":35158,"min":2153,"avg":6643.583333333333,"active":0,"complete":12,"success":12,"errored":0,"retried":0,"total":12,"elapsed":35163}
+[info] +  hosting[clone-yt-cef81]: file upload complete 
+[debug] [2022-08-31T09:26:30.124Z] [hosting] deploy completed after 45557ms
+[debug] [2022-08-31T09:26:30.131Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "clone-yt-cef81"
+    },
+    "site": "clone-yt-cef81",
+    "version": "projects/830620923148/sites/clone-yt-cef81/versions/5118a2083ce0c3ef"
+  }
+]
+[info] i  hosting[clone-yt-cef81]: finalizing version... 
+[debug] [2022-08-31T09:26:30.135Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/830620923148/sites/clone-yt-cef81/versions/5118a2083ce0c3ef updateMask=status%2Cconfig
+[debug] [2022-08-31T09:26:30.136Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/830620923148/sites/clone-yt-cef81/versions/5118a2083ce0c3ef {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
+[debug] [2022-08-31T09:26:36.252Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/830620923148/sites/clone-yt-cef81/versions/5118a2083ce0c3ef 200
+[debug] [2022-08-31T09:26:36.252Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/830620923148/sites/clone-yt-cef81/versions/5118a2083ce0c3ef {"name":"projects/830620923148/sites/clone-yt-cef81/versions/5118a2083ce0c3ef","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-08-31T09:27:06.593966Z","createUser":{"email":"abbasalabson@gmail.com"},"finalizeTime":"2022-08-31T09:27:56.823422Z","finalizeUser":{"email":"abbasalabson@gmail.com"}}
+[debug] [2022-08-31T09:26:36.253Z] [hosting] finalized version for clone-yt-cef81:[object Object]
+[info] +  hosting[clone-yt-cef81]: version finalized 
+[info] i  hosting[clone-yt-cef81]: releasing new version... 
+[debug] [2022-08-31T09:26:36.255Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/830620923148/sites/clone-yt-cef81/releases versionName=projects%2F830620923148%2Fsites%2Fclone-yt-cef81%2Fversions%2F5118a2083ce0c3ef
+[debug] [2022-08-31T09:26:36.255Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/830620923148/sites/clone-yt-cef81/releases {"message":null}
+[debug] [2022-08-31T09:26:38.244Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/830620923148/sites/clone-yt-cef81/releases 200
+[debug] [2022-08-31T09:26:38.244Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/830620923148/sites/clone-yt-cef81/releases {"name":"projects/830620923148/sites/clone-yt-cef81/releases/1661938081294549","version":{"name":"projects/830620923148/sites/clone-yt-cef81/versions/5118a2083ce0c3ef","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-08-31T09:27:06.593966Z","createUser":{"email":"abbasalabson@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/AFdZucqds-0mlMZoZ2noYHfgqDNWviJcai3jORO8aOOK"},"finalizeTime":"2022-08-31T09:27:56.823422Z","finalizeUser":{"email":"abbasalabson@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/AFdZucqds-0mlMZoZ2noYHfgqDNWviJcai3jORO8aOOK"}},"type":"DEPLOY","releaseTime":"2022-08-31T09:28:01.294549490Z","releaseUser":{"email":"abbasalabson@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/AFdZucqds-0mlMZoZ2noYHfgqDNWviJcai3jORO8aOOK"}}
+[debug] [2022-08-31T09:26:38.245Z] [hosting] release: {"name":"projects/830620923148/sites/clone-yt-cef81/releases/1661938081294549","version":{"name":"projects/830620923148/sites/clone-yt-cef81/versions/5118a2083ce0c3ef","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-08-31T09:27:06.593966Z","createUser":{"email":"abbasalabson@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/AFdZucqds-0mlMZoZ2noYHfgqDNWviJcai3jORO8aOOK"},"finalizeTime":"2022-08-31T09:27:56.823422Z","finalizeUser":{"email":"abbasalabson@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/AFdZucqds-0mlMZoZ2noYHfgqDNWviJcai3jORO8aOOK"}},"type":"DEPLOY","releaseTime":"2022-08-31T09:28:01.294549490Z","releaseUser":{"email":"abbasalabson@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/AFdZucqds-0mlMZoZ2noYHfgqDNWviJcai3jORO8aOOK"}}
+[info] +  hosting[clone-yt-cef81]: release complete 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/clone-yt-cef81/overview
+[info] Hosting URL: https://clone-yt-cef81.web.app
+[debug] [2022-08-31T09:26:49.893Z] Error: Timed out.
+    at Timeout.<anonymous> (C:\Users\alabs\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:253:49)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)
+[error] 
+[error] Error: An unexpected error has occurred.

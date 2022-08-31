@@ -1,0 +1,18 @@
+//SCSS
+@import "./variable.scss";
+@import "./config.scss";
+
+//COMPONENTS
+@import "./components/header.scss";
+@import "./components/sidebar.scss";
+@import "./components/sidebarOptions.scss";
+@import "./components/mail.scss";
+@import "./components/emailList.scss";
+@import "./components/section.scss";
+@import "./components/emailRow.scss";
+@import "./components/sendMail.scss";
+@import "./components/iconSection.scss";
+
+//PAGES
+@import "./pages/app.scss";
+@import "./pages/login.scss"

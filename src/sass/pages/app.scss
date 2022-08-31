@@ -1,0 +1,9 @@
+.app {
+    height: 100vh;
+}
+
+.app__body {
+    display: flex;
+    max-height: 100vh;
+    background-color: rgb(246, 248, 252);
+}
