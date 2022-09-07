@@ -1,4 +1,5 @@
 import React from 'react'
+import { imgSrc } from '../static/imgSrc';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
@@ -26,7 +27,7 @@ function Header() {
             <IconButton>
                 <MenuIcon />
             </IconButton>
-            <a href='https://mail.google.com/'><img src=" https://i.im.ge/2022/08/30/OtkCED.NewGmail.png" alt="Gmail" /></a>
+            <a href='https://mail.google.com/'><img src={imgSrc.header__logo} alt="Gmail" /></a>
         </div>
 
         <div className="header__middle">
@@ -46,7 +47,7 @@ function Header() {
               <AppsIcon />
             </IconButton>
             <Tooltip title={user.displayName}>
-              <Avatar onclick={signOut} src={user?.photoUrl} />
+              <Avatar onclick={signOut} src={user?.photoUrl}> { user?.displayName[0] } </Avatar>
             </Tooltip>
         </div>
 

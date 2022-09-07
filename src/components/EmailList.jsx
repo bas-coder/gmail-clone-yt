@@ -76,112 +76,11 @@ function EmailList() {
           />
         ))}
         <EmailRow 
-        title="Twitch"
-        subject="Hey fellow streamer !!!"
-        describtion="This is the test"
-        time="10pm"
-        />
-        <EmailRow 
-        title="Twitch"
-        subject="Hey fellow streamer !!!"
-        describtion="This is the test"
-        time="10pm"
-        />
-
-        <EmailRow 
-        title="Twitch"
-        subject="Hey fellow streamer !!!"
-        describtion="This is the test. ldhy dwb wd be wuwwiub  wbbb wbwubwu"
-        time="10pm"
-        />
-        <EmailRow 
-        title="Twitch"
-        subject="Hey fellow streamer !!!"
-        describtion="This is the test"
-        time="10pm"
-        />
-
-        <EmailRow 
-        title="Twitch"
-        subject="Hey fellow streamer !!!"
-        describtion="This is the test. ldhy dwb wd be wuwwiub  wbbb wbwubwu"
-        time="10pm"
-        />
-        <EmailRow 
-        title="Twitch"
-        subject="Hey fellow streamer !!!"
-        describtion="This is the test"
-        time="10pm"
-        />
-        <EmailRow 
-        title="Twitch"
-        subject="Hey fellow streamer !!!"
-        describtion="This is the test"
-        time="10pm"
-        />
-
-        <EmailRow 
-        title="Twitch"
-        subject="Hey fellow streamer !!!"
-        describtion="This is the test. ldhy dwb wd be wuwwiub  wbbb wbwubwu"
-        time="10pm"
-        />
-        <EmailRow 
-        title="Twitch"
-        subject="Hey fellow streamer !!!"
-        describtion="This is the test"
-        time="10pm"
-        />
-        <EmailRow 
-        title="Twitch"
-        subject="Hey fellow streamer !!!"
-        describtion="This is the test. ldhy dwb wd be wuwwiub  wbbb wbwubwu"
-        time="10pm"
-        />
-        <EmailRow 
-        title="Twitch"
-        subject="Hey fellow streamer !!!"
-        describtion="This is the test"
-        time="10pm"
-        />
-        <EmailRow 
-        title="Twitch"
-        subject="Hey fellow streamer !!!"
-        describtion="This is the test. ldhy dwb wd be wuwwiub  wbbb wbwubwu"
-        time="10pm"
-        />
-        <EmailRow 
-        title="Twitch"
-        subject="Hey fellow streamer !!!"
-        describtion="This is the test"
-        time="10pm"
-        />
-
-        <EmailRow 
-        title="Twitch"
-        subject="Hey fellow streamer !!!"
-        describtion="This is the test. ldhy dwb wd be wuwwiub  wbbb wbwubwu"
-        time="10pm"
-        />
-        <EmailRow 
-        title="Twitch"
-        subject="Hey fellow streamer !!!"
-        describtion="This is the test. ldhy dwb wd be wuwwiub  wbbb wbwubwu"
-        time="10pm"
-        />
-        <EmailRow 
-        title="Twitch"
-        subject="Hey fellow streamer !!!"
-        describtion="This is the test"
-        time="10pm"
-        />
-
-        <EmailRow 
-        title="Twitch"
-        subject="Hey fellow streamer !!!"
-        describtion="This is the test. ldhy dwb wd be wuwwiub  wbbb wbwubwu"
-        time="10pm"
-        />        
+        title="Creator"
+        subject="Hey user !!!"
+        describtion="Try the compose button"
+        time="Just Now"
+        />      
 
       </div>
     </div>

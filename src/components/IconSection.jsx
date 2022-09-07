@@ -1,4 +1,5 @@
 import React from 'react'
+import { imgSrc } from '../static/imgSrc';
 import AddIcon from '@mui/icons-material/Add';
 import { IconButton } from '@mui/material';
 
@@ -7,16 +8,16 @@ function IconSection() {
     <div className='iconSection'>
       <div className="iconSection__section">
         <div className="iconSection__img">
-            <img src="https://i.im.ge/2022/08/30/Ot9RqK.calendarIcon.png" alt="" />
+            <img src={imgSrc.calender__icon} alt="" />
         </div>
         <div className="iconSection__img">
-          <img src="https://i.im.ge/2022/08/30/Ot9g4F.bulbIcon.png" alt="" />
+          <img src={imgSrc.bulb__icon} alt="" />
         </div> 
         <div className="iconSection__img">
-          <img src="https://i.im.ge/2022/08/30/Ot9Wt9.roundedTick.png" alt="" />
+          <img src={imgSrc.tick__icon} alt="" />
         </div> 
         <div className="iconSection__img">
-          <img src="https://i.im.ge/2022/08/30/Ot9xRy.avatarIcon.png" alt="" />
+          <img src={imgSrc.round__avatar} alt="" />
         </div>
         <div className="iconSection__add">
           <IconButton>
